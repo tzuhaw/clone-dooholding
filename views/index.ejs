@@ -1,0 +1,367 @@
+<%- include("partials/header") %>
+<!-- disclaim -->
+<div class="disclaimer" id="disclaimer">
+  <div class="disclaimer-wrapper" id="disclaimer-wrapper">
+    <img
+      class="disclaimer-bg-img-top"
+      src="https://www.doo.hk/static/media/doo-holding-icon.2b38d653.svg"
+      alt=""
+    /><img
+      class="disclaimer-bg-img"
+      src="https://www.doo.hk/static/media/doo-holding-icon.2b38d653.svg"
+      alt=""
+    />
+    <div class="disclaimer-flex-container">
+      <img
+        class="disclaimer-logo"
+        src="https://www.doo.hk/static/media/doo-holding-logo.51675ae2.svg"
+        alt="Doo Holding Logo"
+      />
+      <p class="disclaimer-language">English</p>
+    </div>
+    <div class="disclaimer-content" id="disclaimer-content">
+      <p class="disclaimer-title">Disclaimer</p>
+      <ul class="disclaimer-list">
+        <li class="disclaimer-item">
+          Please note that any comments, statements or data provided in this
+          website is only for reference purposes only.
+        </li>
+        <li class="disclaimer-item">
+          The posted documents and information published on this website are
+          only directed at and intended for customers of this website.
+        </li>
+        <li class="disclaimer-item">
+          There may be local laws and regulations which prohibit or limit your
+          rights to access, download, distribute, disseminate, share or
+          otherwise use any or all of the documents and information published on
+          this website.
+        </li>
+        <li class="disclaimer-item">
+          The documents and information published on this website must not
+          access, use, rely or acted upon by any person regardless of his/her
+          nationality, residence, registration and jurisdiction without the
+          permission of laws and regulations. Documents and information posted
+          on this website cannot be used for publicity, promotion, marketing
+          activities or any commitment or offer to any party.
+        </li>
+        <li class="disclaimer-item">
+          We further specifically disclaim and accept no liability or
+          responsibility whatsoever for the access, downloading, distribution,
+          dissemination, sharing or other use of any materials by or to
+          individuals or entities.
+        </li>
+        <li class="disclaimer-item">
+          We fully comply with all applicable laws and regulations in
+          jurisdictions. It is your responsibility to determine and ensure that
+          your investment meets your requirements, and you will bear all the
+          consequences of your investment.
+        </li>
+        <li class="disclaimer-item">
+          We do not provide products and services to the residents in United
+          States, Japan, Cayman Islands, Hong Kong, Malaysia, and Taiwan.
+        </li>
+        <li class="disclaimer-item">
+          Visitors from the above regions or other regions should confirm
+          whether your decision to invest using Doo Holding are in accordance
+          with laws and regulations in your country of residence before you use
+          Doo Holding and its related services. We reserve our rights to
+          discontinue or to decline to provide our services and products to any
+          party at any time.
+        </li>
+        <li class="disclaimer-item">
+          If you require any further information, please refer to related
+          documents available on our website.
+        </li>
+        <li class="disclaimer-item">
+          This website uses 'cookies' to give you the best, most relevant
+          experience. Using this website means you are agreed with this.
+        </li>
+      </ul>
+      <label class="disclaimer-label"
+        ><input class="disclaimer-checkbox" id="checked" type="checkbox" />Do
+        not show this disclaimer for the day.<span
+          class="disclaimer-checkmark"
+        ></span
+      ></label>
+      <div class="disclaimer-button-group">
+        <button class="disclaimer-agree-button" id="agree" onclick="agree()">
+          Agree</button
+        ><button
+          class="disclaimer-disagree-button"
+          id="disagree"
+          onclick="disagree()"
+        >
+          Disagree
+        </button>
+      </div>
+    </div>
+    <div class="disclaimer-disagree-content" id="prev" style="display: none;">
+      <p>Please close this site manually.</p>
+      <button class="disclaimer-previous-button" onclick="back()">
+        Go Back
+      </button>
+    </div>
+  </div>
+</div>
+<script>
+  // checkHandler Checkbox
+  document.getElementById("checked").addEventListener("click", function () {
+    setCookie();
+  });
+  // Get Cookie
+  if (document.cookie.indexOf("disclaimermsg") != -1)
+    document.getElementById("disclaimer").remove();
+</script>
+
+<!-- home -->
+<section id="home" class="home">
+  <div class="container">
+    <div class="wrapper">
+      <p>Build Your Financial Enterprise</p>
+      <h1>Build Your Financial Execution to the Next Level</h1>
+      <h2>
+        Doo Holding Group was officially incorporated in Hong Kong since 2014, a
+        financial services group with cutting-edge technology and solutions. Doo
+        Holdings is globally located and branches in Hong Kong, London, Taiwan,
+        Kuala Lumpur, managing the brands of Doo Holding, Doo Tech, Doo Prime,
+        Doo Clearing, Doo Cloud, Doo Exchange, Doo Intelligence and Doo
+        Consulting.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<!-- Brands -->
+<section id="brands" class="brands">
+  <div class="container">
+    <h2>Our Brands</h2>
+    <div class="grid-container-4">
+      <div class="brand">
+        <div class="overlay"></div>
+        <div class="brand-item">
+          <figure>
+            <img
+              src="https://www.doo.hk/static/media/DooPrimeColor.afdec70d.svg"
+              class="responsive-img"
+              alt=""
+            />
+          </figure>
+          <p>
+            With years of industry experience and world-class technical support,
+            Doo Prime provides retail customers and professional traders with
+            the best liquidity solutions for financial markets, allowing all of
+            our investors to enjoy the fastest rates at the lowest market rates.
+          </p>
+          <hr />
+          <a href="https://www.dooprime.com/" target="_blank">Read more &gt;</a>
+        </div>
+      </div>
+      <div class="brand">
+        <div class="overlay"></div>
+        <div class="brand-item">
+          <figure>
+            <img
+              src="https://www.doo.hk/static/media/DooClearing.c10e1125.svg"
+              class="responsive-img"
+              alt=""
+            />
+          </figure>
+          <p>
+            Doo Clearing, a UK-based Spot Forex and CFDs liquidity provider,
+            provides a reliable and advanced system that allows the clients to
+            access global liquidity under a single connection. Doo Clearing
+            offers a comprehensive liquidity clearing system that includes
+            liquidity access, quotation aggregation, liquidity distribution,
+            clearing account, risk management, reporting, and system
+            health-level checking.
+          </p>
+          <hr />
+          <a href="https://www.dooclearing.co.uk/" target="_blank"
+            >Read more &gt;</a
+          >
+        </div>
+      </div>
+      <div class="brand">
+        <div class="overlay"></div>
+        <div class="brand-item">
+          <figure>
+            <img
+              src="https://www.doo.hk/static/media/DooTechColor.02eb2cd3.svg"
+              class="responsive-img"
+              alt=""
+            />
+          </figure>
+          <p>
+            Cutting-edge technology with an ultra-low latency trading
+            environment and multi-asset arrangement, Doo Tech can advance your
+            workflow management and efficiency dramatically. Outstanding
+            customer services consistently executes customized support, Doo Tech
+            brings your business to the next level.
+          </p>
+          <hr />
+          <a href="https://doo.tech/" target="_blank">Read more &gt;</a>
+        </div>
+      </div>
+      <div class="brand">
+        <div class="overlay"></div>
+        <div class="brand-item">
+          <figure>
+            <img
+              src="https://www.doo.hk/static/media/DooExchangeColor.6744a7ac.svg"
+              class="responsive-img"
+              alt=""
+            />
+          </figure>
+          <p>
+            Doo Exchange is a Licensed Foreign Currency Exchange Company
+            regulated by the Customs and Excise Department, Hong Kong SAR. We
+            are dedicated to providing corporate and retail clients a full range
+            of international money exchange services.
+          </p>
+          <hr />
+          <a href="https://www.dooexchange.com/" target="_blank"
+            >Read more &gt;</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Core Value -->
+<section id="core-values" class="core-values">
+  <div class="container">
+    <h2>Core Values</h2>
+    <div class="grid-container-2 outer-grid">
+      <div class="grid-container-2 inner-grid-left">
+        <figure>
+          <img src="https://www.doo.hk/static/media/3.052017c5.png" alt="" />
+        </figure>
+        <div class="grid-content">
+          <h3>Value</h3>
+          <div class="inner-grid-content">
+            <div>
+              <h4>Outstanding</h4>
+              <p>
+                We value skill, intelligent and hard-work in our team to achieve
+                the best possible result.
+              </p>
+            </div>
+            <div>
+              <h4>Multi-asset</h4>
+              <p>
+                We value multiple-asset development to provide cost-effective
+                one stop solutions to our clients.
+              </p>
+            </div>
+            <div>
+              <h4>Integrity</h4>
+              <p>
+                We hold strong corporate compliance culture; social
+                responsibility is at the core of our business.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="inner-grid-right">
+        <div class="grid-container-2 grid-content-top">
+          <figure>
+            <img src="https://www.doo.hk/static/media/4.e60ded5e.png" alt="" />
+          </figure>
+          <div class="grid-content">
+            <h3>Mission</h3>
+            <p>
+              Establishing a financial ecosystem network that empowers our
+              clients to stay one step ahead.
+            </p>
+          </div>
+        </div>
+        <div class="grid-container-2 grid-content-bottom">
+          <figure>
+            <img src="https://www.doo.hk/static/media/5.1ab11a11.png" alt="" />
+          </figure>
+          <div class="grid-content">
+            <h3>Vision</h3>
+            <p>Brings global financial execution to the next level.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Global-Offices -->
+<section id="global-offices" class="global-offices">
+  <div class="container">
+    <h2>Global Offices</h2>
+    <div class="map">
+      <img
+        class="responsive-img"
+        src="https://www.doo.hk/static/media/map.b2311ec9.svg"
+        alt="global offices around the world"
+      />
+      <div class="point" style="left: 46%; top: 20%;">
+        <span class="red-dot" style="left: 46%; top: 20%;"
+          ><p class="place">London</p>
+          <div class="tooltip">
+            <p>Ground Floor, Birchin Court,</p>
+            <p>20 Birchin Lane,City of London,</p>
+            <p>London, EC3V 9DU, UK</p>
+          </div></span
+        >
+      </div>
+      <div class="point" style="left: 24%; top: 44%;">
+        <span class="red-dot" style="left: 24%; top: 44%;"
+          ><p class="place">George Town</p>
+          <div class="tooltip">
+            <p>Governors Square, 23 Lime,</p>
+            <p>Tree Bay Avenue, George Town,</p>
+            <p>KY1-1104, Cayman Islands</p>
+          </div></span
+        >
+      </div>
+      <div class="point" style="left: 26%; top: 48%;">
+        <span class="red-dot" style="left: 26%; top: 48%;"
+          ><p class="place">Road Town</p>
+          <div class="tooltip">
+            <p>NovaSage Chambers,</p>
+            <p>Wickham’s Cay II, Road</p>
+            <p>Town, British Virgin Islands</p>
+          </div></span
+        >
+      </div>
+      <div class="point" style="left: 75%; top: 35%;">
+        <span class="red-dot" style="left: 75%; top: 35%;"
+          ><p class="place">Hong Kong</p>
+          <div class="tooltip">
+            <p>25/F, Tower B, Billion Centre, No. 1</p>
+            <p>Wang Kwong Road, Kowloon Bay,</p>
+            <p>Hong Kong</p>
+          </div></span
+        >
+      </div>
+      <div class="point" style="left: 77%; top: 44%;">
+        <span class="red-dot" style="left: 77%; top: 44%;"
+          ><p class="place">Taipei</p>
+          <div class="tooltip">
+            <p>7/F, No.2-1, Wenhu Street,</p>
+            <p>Neihu District,Taipei</p>
+          </div></span
+        >
+      </div>
+      <div class="point" style="left: 73%; top: 55%;">
+        <span class="red-dot" style="left: 73%; top: 55%;"
+          ><p class="place">Kuala Lumpur</p>
+          <div class="tooltip">
+            <p>23/F, The Vertical Business</p>
+            <p>Suite, 8 Jalan Kerinchi, Bangsar</p>
+            <p>South, Kuala Lumpur, Malaysia</p>
+          </div></span
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+<%- include("partials/footer") %>
